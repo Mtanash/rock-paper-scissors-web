@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  min-height: calc(100vh - 77px);
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+header {
+  text-align: center;
+
+  font-weight: bold;
+  background-color: #fff;
+  color: #333;
+}
+
+header h1 {
+  padding: 20px;
+}
+
+.score-board {
+  width: fit-content;
+  padding: 25px 50px;
+  margin: 0;
+  border: 2px solid #fff;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.score-board p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.score-board .badge {
+  color: #fff;
+  background-color: tomato;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: absolute;
+}
+
+.score-board .user-badge {
+  top: 50%;
+  left: -20.5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.score-board .computer-badge {
+  top: 50%;
+  right: -26.25px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.icons div {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.icons div i {
+  padding: 25px;
+  color: burlywood;
+}
+
+.win {
+  border-color: green !important;
+}
+
+.lose {
+  border-color: red !important;
+}
+
+.draw {
+  border-color: grey !important;
+}
